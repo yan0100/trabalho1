@@ -27,7 +27,8 @@ footer .conteiner a{
 
 .navbar ul{
     list-style-type: none;
-    background-color: gray;
+    background-color: #003366; /* Fundo azul marinho para o menu */
+
     padding: 0px;
     margin: 0px;
     overflow: hidden;
