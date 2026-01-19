@@ -2,11 +2,12 @@
 <html>
     <head>
         <title>hardware e tecnologia</title>
-        <link rel="stylesheet" href="teste.css">
+        <link rel="stylesheet" href="aqui fica bonito.css">
+
     </head>
     <body>
         
-        <link rel="stylesheet" href="aqui fica bonito.css">
+        
         <!---colocar div--->
 
             <style>
@@ -26,11 +27,8 @@
 
 
             </style>
-            <link rel="stylesheet" href="dados.js ">
-            <link rel="stylesheet" href="style.css">
             <nav class="navbar">
                 <ul class="navlinks">
-                    <li><a href="menu.html">home</a></li>
                     <li><a href="analises.html">analises</a></li>
                     <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
                     <li><a href="noticias.html">noticias</a></li>
@@ -40,74 +38,58 @@
 
 
         </nav>
-        <div class="container">
-       <h1>Monte seu PC e verifique a compatibilidade</h1>
-       <div class="peca-selecao">
-           <label for="placaMaeSelect">Selecione a Placa-Mãe:</label>
-           <select id="placaMaeSelect">fgff</select>
-           <div class="peca-imagem">
-               <img id="placaMaeImg" src="" alt="Imagem da placa-mãe">
-           </div>
-       </div>
-       <div class="peca-selecao">
-           <label for="cpuSelect">Selecione o Processador:</label>
-           <select id="cpuSelect"></select>
-           <div class="peca-imagem"> 
-               <img id="cpuImg" src="" alt="Imagem do processador">
-           </div>
-       </div>
-       <div class="peca-selecao">
-           <label for="ramSelect">Selecione a Memória RAM:</label>
-           <select id="ramSelect"></select>
-           <div class="peca-imagem">
-               <img id="ramImg" src="" alt="Imagem da memória RAM">
-           </div>
-       </div>
-       <div class="peca-selecao">
-           <label for="gpuSelect">Selecione a Placa de Vídeo:</label>
-           <select id="gpuSelect"></select>
-           <div class="peca-imagem">
-               <img id="gpuImg" src="" alt="Imagem da placa de vídeo">
-           </div>
-       </div>
-       <div class="peca-selecao">
-           <label for="psuSelect">Selecione a Fonte:</label>
-           <select id="psuSelect"></select>
-           <div class="peca-imagem">
-               <img id="psuImg" src="sonho de consumo.jpg" alt="Imagem da fonte">
-           </div>
-       </div>
-       <div style="margin:8px 0; font-size:14px; color:#444;">
-           <label><input type="checkbox" id="psuSimpleMode"> Mostrar apenas watts das fontes</label>
-       </div>
-       <div class="acao-selecao" style="margin:12px 0;">
-           <label><input type="radio" name="acao" value="comparar" checked> Comparar compatibilidade</label>
-           <label style="margin-left:16px;"><input type="radio" name="acao" value="calcular"> Calcular watts (consumo)</label>
-       </div>
-       <button onclick="performAction()">Executar</button>
-       <div id="resultado"></div>
-   </div>
-   <script src="teste.js"></script>
-   <Style>
-       ul{
-           list-style-type: none;
-           margin: 0;
-           padding: 0;
-           overflow: hidden;
-    background-color: #2c3e50;
+        <!--isso so me ajuda se o texto esta bom-->
+        
 
-       }
+<main class="container" style="max-width: 1000px; margin: 0 auto; padding: 20px;">
+    
+    <section class="seletor-tipo" role="search" style="margin-bottom: 30px; text-align: center;">
+        <label for="tipoHardware" style="display: block; margin-bottom: 10px; font-weight: bold;">O que deseja comparar?</label>
+        <select id="tipoHardware" style="padding: 12px; width: 100%; max-width: 400px; border-radius: 5px; border: 1px solid #ccc;">
+            <option value="">-- Escolha uma categoria --</option>
+            <option value="cpu">Processadores</option>
+            <option value="gpu">Placas de Vídeo</option>
+            <option value="mobo">Placas-mãe</option>
+        </select>
+    </section>
 
+    <div id="loading" class="hidden" style="display: none; text-align: center; color: #3498db;">Buscando dados...</div>
+    <div id="error-message" class="error hidden" style="display: none; color: red; text-align: center; padding: 10px;"></div>
 
-       .pai{
-           text-align: center;
-           color: white;
-       }
-   </Style>
+    <section id="gridSelecao" class="comparador-grid hidden" style="display: none; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;">
+        <div class="coluna" style="position: relative;">
+            <h3>Peça A</h3>
+            <input type="text" id="inputA" placeholder="Digite o modelo..." style="width: 100%; padding: 10px; border: 1px solid #ddd;">
+            <div id="listaA" class="lista-sugestoes" style="position: absolute; width: 100%; background: white; border: 1px solid #ddd; z-index: 10;"></div>
+        </div>
 
-        <style>
+        <div class="coluna" style="position: relative;">
+            <h3>Peça B</h3>
+            <input type="text" id="inputB" placeholder="Digite o modelo..." style="width: 100%; padding: 10px; border: 1px solid #ddd;">
+            <div id="listaB" class="lista-sugestoes" style="position: absolute; width: 100%; background: white; border: 1px solid #ddd; z-index: 10;"></div>
+        </div>
+    </section>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <button id="btnComparar" class="btn-executar hidden" style="display: none; background-color: #2c3e50; color: white; padding: 15px 40px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+            COMPARAR AGORA
+        </button>
+    </div>
+
+    <section id="resultadoArea" class="hidden" style="display: none; margin-top: 40px; border-top: 2px solid #eee; padding-top: 20px;">
+        <div id="tabelaResultado">
+            </div>
+    </section>
+
+    <section class="historico" style="margin-top: 50px; padding: 20px; background: #f9f9f9; border-radius: 8px;">
+        <h3 style="font-size: 1rem; color: #666;">Última Busca:</h3>
+        <p id="historicoConteudo" style="font-weight: bold; color: #2c3e50;">Nenhuma comparação salva.</p>
+    </section>
+</main>
+
+<script src="dados.js"></script>
+<style>
     footer {
-    background-color: #2c3e50;
     background-color: #2c3e50;
     }
     footer .conteiner{
@@ -134,18 +116,14 @@
         color: white;
 }
 </style>
-
-
-        <footer>
+    <footer>
         <div class="conteiner">
             <!--ul 1-->
             <ul>
                 <h3>blabla</h3>
                 <p>Morbi leo mi, nonummy eget, tristique non, rhoncus non, leo.</p>
                 <div class="redes-sociais">
-                    <a href="https://www.facebook.com/Valve/" target="socia">
-                        <img src="face.png" alt="facebook" width="40" height="40">
-                    </a>
+
                     <style>
                         img {
                             background-color: transparent;
@@ -155,16 +133,13 @@
                     </style>
                     <img src="linkedin.webp" alt="linkedin"width="40" height="40">
 
-                    <!--talvez adicione mais-->
-                    <img src="" alt="">
-                    <img src="" alt="">
                 </div>
             </ul>
             <!--ul 1 fim-->
             <!--ul 2-->
             <ul>
                 <h3>links</h3>
-                <li><a href="menu.html">home</a></li>
+
                 <li><a href="analises.html">analises</a></li>
                 <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
                 <li><a href="noticias.html">noticias</a></li>
@@ -174,7 +149,7 @@
             </ul>
             <!--ul 2fim-->
             <!--ul 3-->
-
+            <!--pensando em tirar isso-->
             <ul>
                 <h3 conteiner>suporte</h3>
                 <li><a href="#">FAQ</a></li>
@@ -193,9 +168,7 @@
             </ul>
             <!--ul 4fim-->
 
-            <!--- Conteúdo do rodapé
-            <p>© 2024 Hardware e Tecnologia. Todos os direitos reservados.</p>
-        --->
+
         </div>
     </footer>
 
