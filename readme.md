@@ -1,4 +1,4 @@
-# 💻 tecnolog - site sobre tecnologias
+#  tecnolog - site sobre tecnologias
 
 Este projeto é uma aplicação web interativa que funciona como um catálogo de informações sobre o mundo da tecnologia. Foi desenvolvido como o trabalho prático da disciplina de programaçao basica para web
 
@@ -30,11 +30,11 @@ Conforme exigido nos requisitos técnicos, o projeto contempla:
 1. Clone este repositório: `git clone https://github.com/yan0100/trabalho1.git`
 2. Abra o arquivo `index.html` no seu navegador de preferência.
 
-## 🖼️ Prints / GIFs
+##  Prints / GIFs
 *(Dica: Adicione aqui uma imagem do seu site funcionando)*
 ![Preview do Site](http://127.0.0.1:3000/index.html?serverWindowId=ef92a8a3-0d04-4540-9711-62484e23867b)
 
-## 🤖 Declaração de Uso de IA
+##  Declaração de Uso de IA
 Este projeto contou com o apoio da IA **Gemini (Google)** para as seguintes tarefas:
 - Estruturação inicial deste arquivo README.
 - Sugestões de boas práticas para a implementação do `localStorage`.
