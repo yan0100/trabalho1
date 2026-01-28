@@ -1,128 +1,179 @@
-
 <!doctype html>
-<html>
-    <head>
-        <title>hardware e tecnologia</title>
-        <link rel="stylesheet" href="aqui fica bonito.css">
-        <style>
-            /* SEU CSS ORIGINAL - SEM ALTERAÇÕES */
-            ul { list-style-type: none; margin: 0; padding: 0; }
-            * { margin: 0; padding: 0; box-sizing: border-box; }
-            
-            footer { background-color: #2c3e50; }
-            footer .conteiner { display: flex; color:white; }
-            footer .conteiner ul { width: 25%; }
-            footer .conteiner h3 { margin-bottom: 16px; font-weight: 600; }
-            footer .conteiner redes-sociais img { margin-right: 10px; }
-            footer .conteiner ul>p { margin-bottom: 40px; }
-            footer .conteiner li { margin: 10px 0; }
-            footer .conteiner a { color: white; }
-            
-            img { background-color: transparent; border-radius: 5px; }
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Care - Technolog</title>
+    <link rel="stylesheet" href="aqui fica bonito.css">
+    <style>
+        /* Estilo Interno da Matéria - Paleta Azul e Ciano */
+        .secao-materia {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 0 0 15px 15px;
+        }
 
-            .navbar ul {
-                list-style-type: none;
-                background-color: #003366; 
-                padding: 0px;
-                margin: 0px;
-                overflow: hidden;
-            }
-            .navbar a {
-                color: white;
-                text-decoration: none;
-                padding: 15px;
-                display: block;
-                text-align: center;
-            }
-            .navbar a:hover { background-color: rgb(0, 0%, 10%); }
-            .navbar li { float: left; }
-            a { text-decoration: none; }
+        .meta-info {
+            color: #00ced1; /* Ciano para Dados */
+            font-size: 14px;
+            margin-bottom: 25px;
+            display: block;
+            border-bottom: 2px solid #00ced1;
+            padding-bottom: 8px;
+            width: fit-content;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
 
-            /* CSS NOVO APENAS PARA A MATÉRIA (O QUE FICA NO MEIO) */
-            .secao-materia {
-                max-width: 800px;
-                margin: 50px auto;
-                padding: 0 20px;
-                font-family: Arial, sans-serif;
-            }
-            .titulo-materia {
-                font-size: 36px;
-                color: #003366;
-                margin-bottom: 20px;
-            }
-            .imagem-materia {
-                width: 100%;
-                height: auto;
-                margin-bottom: 30px;
-            }
-            .texto-latim {
-                line-height: 1.6;
-                color: #333;
-                text-align: justify;
-            }
-            .texto-latim p {
-                margin-bottom: 15px;
-            }
-        </style>
-    </head>
-    <body>
+        .titulo-materia {
+            font-size: 38px;
+            color: #2c3e50;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
 
-        <nav class="navbar">
-            <ul class="navlinks">
-                <li><a href="analises.html">analises</a></li>
-                <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
-                <li><a href="noticias.html">noticias</a></li>
-                <li><a href="comparaçao de peças.html">comparaçao</a></li>
-            </ul>
-        </nav>
+        .imagem-materia {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .texto-artigo h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 40px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #00ced1;
+        }
+
+        .texto-artigo p, .texto-artigo li {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #444;
+            font-size: 1.1rem;
+        }
+
+        /* Tabela Comparativa Estilizada */
+        .tabela-armazenamento {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: #f8fafc;
+        }
+
+        .tabela-armazenamento th {
+            background: #2c3e50;
+            color: #00ced1;
+            padding: 15px;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .tabela-armazenamento td {
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .alerta-smart {
+            background-color: #fffaf0;
+            border: 2px solid #ed8936;
+            padding: 25px;
+            border-radius: 10px;
+            color: #744210;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li><a href="analises.html">analises</a></li>
+            <li><a href="dicas de manutencao.html">manutençao</a></li>
+            <li><a href="noticias.html">noticias</a></li>
+            <li><a href="comparaçao de peças.html">comparaçao</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <h1>Armazenamento e Backup</h1>
+        <p>Seus dados são o bem mais valioso. Saiba como protegê-los.</p>
+    </header>
+
+    <main class="secao-materia">
+        <span class="meta-info">STORAGE | 2026 | SEGURANÇA</span>
+        
         <h1 class="titulo-materia">Data Care: Como não perder seus arquivos para sempre</h1>
-<img src="ssd.webp" class="imagem-materia">
 
-<div class="texto-latim">
-    <h2>1. Entendendo o S.M.A.R.T.</h2>
-    <p>O S.M.A.R.T é um sistema de monitoramento interno do seu disco. Se o valor de "Reallocated Sectors" subir, seu HD/SSD está morrendo física e mecanicamente. Faça backup imediatamente!</p>
+        <img src="ssd.webp" alt="Visão interna de um SSD" class="imagem-materia">
 
-    <h2>2. A Armadilha dos SSDs Chineses Baratos</h2>
-    <p>Muitos SSDs de baixo custo em 2026 não possuem <strong>DRAM Cache</strong>. Isso faz com que, ao ficarem cheios, a velocidade caia para níveis de um HD antigo e a vida útil seja reduzida pela metade devido ao excesso de ciclos de escrita.</p>
-
-    <h2>3. Desfragmentar ou Otimizar?</h2>
-    <ul>
-        <li><strong>HD Mecânico:</strong> Desfragmente mensalmente para organizar as trilhas físicas.</li>
-        <li><strong>SSD/NVMe:</strong> NUNCA desfragmente. Use apenas a função "Otimizar" do Windows (TRIM), que limpa os blocos de memória logicamente.</li>
-    </ul>
-</div>
-        <footer>
-            <div class="conteiner">
-                <ul>
-                    <h3>technolog</h3>
-                    <p>um site de tecnologia</p><div class="redes-sociais">
-                        
-                        <img src="linkedin.webp" alt="linkedin" width="40" height="40">
-                    </div>
-                </ul>
-                <ul>
-                    <h3>links</h3>
-                    <li><a href="analises.html">analises</a></li>
-                    <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
-                    <li><a href="noticias.html">noticias</a></li>
-                    <li><a href="comparaçao de peças.html">comparaçao</a></li>
-                </ul>
-                <ul>
-                    <h3 conteiner>suporte</h3>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-                <ul conteiner>
-                    <h3 class="conteiner">nos contate</h3>
-                    <li class="conteiner">
-                        <p class="conteiner">numero:63 99999-9999</p>
-                    </li>
-                    <li>
-                        <p class="conteier">email:name.example@email.com</p>
-                    </li>
-                </ul>
+        <div class="texto-artigo">
+            <h2>1. Entendendo o S.M.A.R.T.</h2>
+            <p>O S.M.A.R.T é como um "painel de diagnóstico" do seu disco. Ele prevê falhas antes que elas ocorram. Se você notar o valor de <strong>"Reallocated Sectors"</strong> aumentando, seu hardware está fisicamente comprometido.</p>
+            
+            <div class="alerta-smart">
+                <strong>⚠️ AVISO DE EMERGÊNCIA:</strong> Se o software de monitoramento indicar erro S.M.A.R.T, pare tudo! Faça o backup dos seus arquivos vitais antes de tentar qualquer reparo.
             </div>
-        </footer>
 
-    </body>
+            <h2>2. A Armadilha dos SSDs Chineses Baratos</h2>
+            <p>Muitos SSDs de baixo custo economizam no <strong>DRAM Cache</strong>. Sem esse componente, a controladora do SSD fica sobrecarregada ao gerenciar o índice de arquivos.</p>
+            <p><strong>Impacto:</strong> Drives sem cache sofrem lentidão extrema quando cheios e possuem uma vida útil reduzida em até 40% em comparação a modelos premium.</p>
+
+            <h2>3. Desfragmentar ou Otimizar?</h2>
+            <p>Em 2026, realizar o procedimento errado pode diminuir drasticamente a vida útil do seu dispositivo:</p>
+
+            <table class="tabela-armazenamento">
+                <thead>
+                    <tr>
+                        <th>Tipo de Hardware</th>
+                        <th>Ação Recomendada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>HD Mecânico (SATA)</strong></td>
+                        <td><strong>Desfragmentar:</strong> Melhora a leitura física das agulhas magnéticas.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SSD / NVMe</strong></td>
+                        <td><strong>Otimizar (TRIM):</strong> NUNCA desfragmente. O TRIM limpa blocos de memória eletricamente.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <h3>Technolog</h3>
+                <p>O seu portal de hardware e performance.</p>
+            </ul>
+
+            <ul>
+                <h3>links</h3>
+                <li><a href="analises.html">Analises</a></li>
+                <li><a href="dicas de manutencao.html">Manutenção</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="comparaçao de peças.html">Comparação</a></li>
+            </ul>
+
+            <ul>
+                <h3>contato</h3>
+                <li>📍 Palmas, TO</li>
+                <li>📞 (63) 99999-9999</li>
+                <li>✉️ help@technolog.com</li>
+            </ul>
+    </footer>
+        </div>
+    </footer>
+
+</body>
 </html>

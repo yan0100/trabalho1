@@ -1,78 +1,57 @@
 <!doctype html>
-<html>
-    <head>
-        <title>hardware e tecnologia</title>
-    </head>
-    <body>
-        
-        <link rel="stylesheet" href="aqui fica bonito.css">
-        <!---colocar div--->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas de Manutenção - Hardware</title>
+    <link rel="stylesheet" href="aqui fica bonito.css">
+    <style>
+        /* Reset e Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #f4f7f6; font-family: 'Inter', sans-serif; }
+        a { text-decoration: none; }
 
-            <style>
-                ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}/* style.css */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+        /* Header de Impacto (Tira o vazio do topo) */
+        .hero-section {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 40px;
+        }
+        .hero-section h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .hero-section p { opacity: 0.8; font-size: 1.1rem; }
 
-
-
-
-
-            </style>
-            <nav class="navbar">
-                <ul class="navlinks">
- 
-                    <li><a href="analises.html">analises</a></li>
-                    <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
-                    <li><a href="noticias.html">noticias</a></li>
-                    <li><a href="comparaçao de peças.html">comparaçao</a></li>
-                </ul>
-        </div>
-
-
-        </nav>
-        <!--isso so me ajuda se o texto esta bom-->
-        
-
-        <style>
-                    
-            /* Configuração da Lista */
+        /* Configuração da Lista Centralizada */
         .lista-noticias {
             max-width: 900px; 
-            margin-left: 20px; 
-            margin-right: auto; 
+            margin: 0 auto 60px auto; /* Centraliza horizontalmente */
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 25px;
             padding: 0 15px;
         }
 
-        /* O Retângulo Horizontal */
+        /* O Card Horizontal Otimizado */
         .card-horizontal {
             display: flex; 
             background-color: #fff;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: 0.3s ease;
             border: 1px solid #e0e6ed;
         }
 
         .card-horizontal:hover {
-            transform: translateX(10px); /* Leve movimento para a direita no hover */
-            border-color: #003366;
+            transform: translateY(-5px); /* Sobe um pouco em vez de ir pro lado */
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-color: #3498db;
         }
 
-        /* Lado Esquerdo: Imagem */
         .imagem-container {
-            flex: 0 0 300px; /* Largura fixa para a imagem */
-            height: 180px;
+            flex: 0 0 300px;
+            height: 200px;
         }
 
         .imagem-container img {
@@ -81,236 +60,162 @@
             object-fit: cover;
         }
 
-        /* Lado Direito: Informações */
         .info-container {
-            padding: 15px 20px; /* Reduzi um pouco o padding lateral */
+            padding: 25px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start; /* Garante que subtítulo, título e tags comecem na esquerda */
-            text-align: left; /* Alinha o texto à esquerda */
-        }
-
-        .subtitulo-vermelho {
-            color: #b30000;
-            font-size: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 8px;
         }
 
         .titulo-noticia {
-            color: #003366; /* Azul Escuro */
-            font-size: 20px;
-            margin: 0 0 15px 0;
+            color: #2c3e50;
+            font-size: 22px;
+            margin-bottom: 15px;
             line-height: 1.3;
         }
 
-        /* Linha das Tags (Mini Quadrados) */
-        .tags-row {
-            display: flex;
-            gap: 10px;
-        }
-
+        .tags-row { display: flex; gap: 10px; }
         .tag-quadrada {
-            padding: 5px 12px;
-            font-size: 12px;
+            padding: 6px 14px;
+            font-size: 11px;
             font-weight: bold;
             color: white;
             border-radius: 4px;
+            text-transform: uppercase;
         }
-
-        /* Cores das Tags */
-        .hardware { background-color: #333; }
-        .oferta { background-color: #f39c12; } /* Laranja para ofertas */
-
+        .hardware { background-color: #34495e; }
         .tag-outline {
-            padding: 4px 10px;
-            font-size: 12px;
-            border: 1px solid #ccc;
-            color: #777;
+            padding: 5px 13px;
+            font-size: 11px;
+            border: 1px solid #ddd;
+            color: #888;
             border-radius: 4px;
         }
 
-        /* Responsivo: Em celulares, vira empilhado */
-        @media (max-width: 600px) {
-            .card-horizontal {
-                flex-direction: column;
-            }
-            .imagem-container {
-                flex: none;
-                width: 100%;
-            }
-        }
-        a {
-    text-decoration: none; /* Isso remove o risco embaixo das letras */
-}
-        </style>
-    <section class="lista-noticias">
-    <a href="dicas1.html">
-    <article class="card-horizontal">
-        <div class="imagem-container">
-            <img src="pclimpo.webp" alt="Memória RAM">
-        </div>
-        <div class="info-container">
 
-            <h2 class="titulo-noticia">Limpeza Profunda: Como blindar seu hardware contra a poeira</h2>
-            
-            <div class="tags-row">
-                <span class="tag-quadrada hardware">Hardware</span>
-                <span class="tag-outline">dicas</span>
+        /* Mobile */
+        @media (max-width: 768px) {
+            .card-horizontal { flex-direction: column; }
+            .imagem-container { flex: none; width: 100%; height: 180px; }
+            .footer-grid { flex-direction: column; text-align: center; }
+            .footer-col { width: 100%; }
+            .hero-section h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <ul class="navlinks">
+        <li><a href="analises.html">Analises</a></li>
+        <li><a href="dicas de manutencao.html">Manutenção</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="comparaçao de peças.html">Comparação</a></li>
+    </ul>
+</nav>
+
+<header class="hero-section">
+    <h1>Dicas de Manutenção</h1>
+    <p>Aprenda a cuidar do seu hardware e prolongar a vida útil da sua máquina.</p>
+</header>
+
+<section class="lista-noticias">
+    <a href="dicas1.html">
+        <article class="card-horizontal">
+            <div class="imagem-container">
+                <img src="pclimpo.webp" alt="Limpeza de PC">
             </div>
-        </div>
-    </article>
-</a>
-<a href="dica2.html">
-    <article class="card-horizontal">
-        <div class="imagem-container">
-            <img src="pasta.webp" alt="GPU">
-        </div>
-        <div class="info-container">
-            <h2 class="titulo-noticia">Ciência Térmica: Atingindo as temperaturas ideais</h2>
-            
-            <div class="tags-row">
-                <span class="tag-quadrada hardware">hardware</span>
-                <span class="tag-outline">dicas</span>
+            <div class="info-container">
+                <h2 class="titulo-noticia">Limpeza Profunda: Como blindar seu hardware contra a poeira</h2>
+                <div class="tags-row">
+                    <span class="tag-quadrada hardware">Hardware</span>
+                    <span class="tag-outline">Manutenção</span>
+                </div>
             </div>
-        </div>
-    </article>
+        </article>
+    </a>
+
+    <a href="dica2.html">
+        <article class="card-horizontal">
+            <div class="imagem-container">
+                <img src="pasta.webp" alt="Pasta Térmica">
+            </div>
+            <div class="info-container">
+                <h2 class="titulo-noticia">Ciência Térmica: Atingindo as temperaturas ideais</h2>
+                <div class="tags-row">
+                    <span class="tag-quadrada hardware">Cooling</span>
+                    <span class="tag-outline">Dicas</span>
+                </div>
+            </div>
+        </article>
     </a>
     <a href="dica3.html">
-    <article class="card-horizontal">
-        <div class="imagem-container">
-            <img src="ssd.webp" alt="GPU">
-        </div>
-        <div class="info-container">
-
-            <h2 class="titulo-noticia">Data Care: Como não perder seus arquivos para sempre</h2>
-            
-            <div class="tags-row">
-                <span class="tag-quadrada hardware">hardware</span>
-                <span class="tag-outline">dicas</span>
+        <article class="card-horizontal">
+            <div class="imagem-container">
+                <img src="ssd.webp" alt="ssd">
             </div>
-        </div>
-    </article>
-    </a>
-    <a href="dica4.html">
-    <article class="card-horizontal">
-        <div class="imagem-container">
-            <img src="bios.webp" alt="GPU">
-        </div>
-        <div class="info-container">
-            <h2 class="titulo-noticia">Tunagem de Software: Extraindo o máximo do seu SO</h2>
-            
-            <div class="tags-row">
-                <span class="tag-quadrada hardware">hardware</span>
-                <span class="tag-outline">dicas</span>
-            </div>
-        </div>
-    </article>
-    </a>
-    <a href="dica5.html">
-    <article class="card-horizontal">
-        <div class="imagem-container">
-            <img src="clamper.webp" alt="GPU">
-        </div>
-        <div class="info-container">
-            <h2 class="titulo-noticia">lindagem Elétrica: Protegendo seu PC de Raios e Curtos</h2>
-            
-            <div class="tags-row">
-                <span class="tag-quadrada hardware">hardware</span>
-                <span class="tag-outline">dicas</span>
-            </div>
-        </div>
-    </article>
-    </a>
-</section> 
-<style>
-    footer {
-    background-color: #2c3e50;
-    }
-    footer .conteiner{
-    display: flex;
-    color:white;
-    }
-    footer .conteiner ul{
-        width: 25%;
-    }
-    footer .conteiner h3{
-        margin-bottom: 16px;
-        font-weight: 600;
-    }
-    footer .conteiner redes-sociais img{
-        margin-right: 10px;
-    }
-    footer .conteiner ul>p{
-        margin-bottom: 40px;
-    }
-    footer .conteiner li{
-        margin: 10px 0;
-    }
-    footer .conteiner a{
-        color: white;
-}
-</style>
-    <footer>
-        <div class="conteiner">
-            <!--ul 1-->
-            <ul>
-                <h3>blabla</h3>
-                <p>Morbi leo mi, nonummy eget, tristique non, rhoncus non, leo.</p>
-                <div class="redes-sociais">
-
-                    <style>
-                        img {
-                            background-color: transparent;
-                            border-radius: 5px;
-}
-
-                    </style>
-                    <img src="linkedin.webp" alt="linkedin"width="40" height="40">
-
-                    <!--talvez adicione mais-->
-                    <img src="" alt="">
-                    <img src="" alt="">
+            <div class="info-container">
+                <h2 class="titulo-noticia">Data Care: Como não perder seus arquivos para sempre</h2>
+                <div class="tags-row">
+                    <span class="tag-quadrada hardware">Hhttp://127.0.0.1:3000/compara%C3%A7ao%20de%20pe%C3%A7as.htmlardware</span>
+                    <span class="tag-outline">Dicas</span>
                 </div>
-            </ul>
-            <!--ul 1 fim-->
-            <!--ul 2-->
+            </div>
+        </article>
+    </a>
+        <a href="dica4.html">
+        <article class="card-horizontal">
+            <div class="imagem-container">
+                <img src="bios.webp" alt="bios">
+            </div>
+            <div class="info-container">
+                <h2 class="titulo-noticia">Tunagem de Software: Extraindo o máximo do seu SO</h2>
+                <div class="tags-row">
+                    <span class="tag-quadrada hardware">Software</span>
+                    <span class="tag-outline">Dicas</span>
+                </div>
+            </div>
+        </article>
+    </a>
+        <a href="dica5.html">
+        <article class="card-horizontal">
+            <div class="imagem-container">
+                <img src="clamper.webp" alt="bios">
+            </div>
+            <div class="info-container">
+                <h2 class="titulo-noticia">Blindagem Elétrica: Protegendo seu PC de Raios e Curtos</h2>
+                <div class="tags-row">
+                    <span class="tag-quadrada hardware">periferico</span>
+                    <span class="tag-outline">Dicas</span>
+                </div>
+            </div>
+        </article>
+    </a>
+    
+    </section>
+
+<footer>
+    <div class="footer-content"> <ul> <h3>Technolog</h3>
+            <p>Seu guia de hardware e tecnologia desde 2024.</p>
+        </ul>
+        
+
             <ul>
                 <h3>links</h3>
-
-                <li><a href="analises.html">analises</a></li>
-                <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
-                <li><a href="noticias.html">noticias</a></li>
-                <li><a href="comparaçao de peças.html">comparaçao</a></li>
-
-
+                <li><a href="analises.html">Analises</a></li>
+                <li><a href="dicas de manutencao.html">Manutenção</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="comparaçao de peças.html">Comparação</a></li>
             </ul>
-            <!--ul 2fim-->
-            <!--ul 3-->
 
             <ul>
-                <h3 conteiner>suporte</h3>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contato</a></li>
+                <h3>contato</h3>
+                <li>📍 Palmas, TO</li>
+                <li>📞 (63) 99999-9999</li>
+                <li>✉️ help@technolog.com</li>
             </ul>
-            <!--ul 3fim-->
-            <!--ul 4-->
-            <ul conteiner>
-                <h3 class="conteiner">nos contate</h3>
-                <li class="conteiner">
-                    <p class="conteiner">numero:63 99999-9999</p>
-                </li>
-                <li>
-                    <p class="conteier">email:name.example@email.com</p>
-                </li>
-            </ul>
-            <!--ul 4fim-->
-
-
-        </div>
     </footer>
-
-    </body>
+    </div>
+</footer>
+</body>
 </html>

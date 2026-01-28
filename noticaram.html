@@ -1,153 +1,187 @@
-
-
 <!doctype html>
-<html>
-    <head>
-        <title>hardware e tecnologia</title>
-        <link rel="stylesheet" href="aqui fica bonito.css">
-        <style>
-            /* SEU CSS ORIGINAL - SEM ALTERAÇÕES */
-            ul { list-style-type: none; margin: 0; padding: 0; }
-            * { margin: 0; padding: 0; box-sizing: border-box; }
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Crise do Hardware 2026 - Technolog</title>
+    <link rel="stylesheet" href="aqui fica bonito.css">
+    <style>
+        /* Estilos Premium para Matéria de Notícia */
+        .secao-materia {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-radius: 0 0 15px 15px;
+        }
+
+        .meta-info {
+            color: #1e3a8a; /* Azul Econômico */
+            font-size: 14px;
+            margin-bottom: 25px;
+            display: block;
+            border-bottom: 2px solid #1e3a8a;
+            padding-bottom: 8px;
+            width: fit-content;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .titulo-materia {
+            font-size: 38px;
+            color: #1a1a1a;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        .imagem-materia {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        /* Tabela de Preços Estilizada */
+        .tabela-precos {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 35px 0;
+            background: #f8fafc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .tabela-precos th {
+            background: #1e3a8a;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .tabela-precos td {
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+            color: #334155;
+        }
+
+        .preco-alta {
+            color: #dc2626;
+            font-weight: bold;
+        }
+
+        .texto-materia h2 {
+            font-size: 26px;
+            color: #1e3a8a;
+            margin: 40px 0 20px 0;
+            border-left: 5px solid #f59e0b;
+            padding-left: 15px;
+        }
+
+        .texto-materia p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Box de Dica do Editor */
+        .dica-editor {
+            background-color: #fef3c7;
+            border: 2px solid #f59e0b;
+            padding: 25px;
+            border-radius: 10px;
+            color: #92400e;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li><a href="analises.html">analises</a></li>
+            <li><a href="dicas de manutencao.html">manutençao</a></li>
+            <li><a href="noticias.html">noticias</a></li>
+            <li><a href="comparaçao de peças.html">comparaçao</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <h1>Technolog News</h1>
+        <p>Análises de mercado e tendências globais de hardware.</p>
+    </header>
+
+    <main class="secao-materia">
+        <span class="meta-info">ECONOMIA | JAN 2026 | MERCADO GLOBAL</span>
+        <h1 class="titulo-materia">A "Tempestade Perfeita": Por que montar um PC em 2026 ficou tão caro?</h1>
+        
+        <img src="memoria.webp" alt="Chips de memória semicondutores" class="imagem-materia">
+
+        <div class="texto-materia">
+            <p>Se você tentou comprar um kit de memória RAM nas últimas semanas, provavelmente levou um susto. O mercado de hardware enfrenta em 2026 uma das maiores crises de abastecimento da década, com preços que subiram drasticamente em relação ao ano passado.</p>
             
-            footer { background-color: #2c3e50; }
-            footer .conteiner { display: flex; color:white; }
-            footer .conteiner ul { width: 25%; }
-            footer .conteiner h3 { margin-bottom: 16px; font-weight: 600; }
-            footer .conteiner redes-sociais img { margin-right: 10px; }
-            footer .conteiner ul>p { margin-bottom: 40px; }
-            footer .conteiner li { margin: 10px 0; }
-            footer .conteiner a { color: white; }
-            
-            img { background-color: transparent; border-radius: 5px; }
+            <h2>O culpado: O Boom da Inteligência Artificial</h2>
+            <p>O principal motivo não está nos computadores domésticos, mas nos grandes Data Centers. Empresas gigantes como Google e Microsoft estão absorvendo estoques inteiros de chips DRAM para alimentar servidores de IA. Isso deixa as sobras para o mercado de PCs comuns, o que dispara o valor final para o consumidor.</p>
 
-            .navbar ul {
-                list-style-type: none;
-                background-color: #003366; 
-                padding: 0px;
-                margin: 0px;
-                overflow: hidden;
-            }
-            .navbar a {
-                color: white;
-                text-decoration: none;
-                padding: 15px;
-                display: block;
-                text-align: center;
-            }
-            .navbar a:hover { background-color: rgb(0, 0%, 10%); }
-            .navbar li { float: left; }
-            a { text-decoration: none; }
+            <table class="tabela-precos">
+                <thead>
+                    <tr>
+                        <th>Componente (16GB)</th>
+                        <th>Média 2024</th>
+                        <th>Preço Atual (2026)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DDR4 3200MHz</td>
+                        <td>R$ 280,00</td>
+                        <td class="preco-alta">R$ 490,00 (+75%)</td>
+                    </tr>
+                    <tr>
+                        <td>DDR5 6000MHz</td>
+                        <td>R$ 450,00</td>
+                        <td class="preco-alta">R$ 890,00 (+97%)</td>
+                    </tr>
+                </tbody>
+            </table>
 
-            /* CSS NOVO APENAS PARA A MATÉRIA (O QUE FICA NO MEIO) */
-            .secao-materia {
-                max-width: 800px;
-                margin: 50px auto;
-                padding: 0 20px;
-                font-family: Arial, sans-serif;
-            }
-            .titulo-materia {
-                font-size: 36px;
-                color: #003366;
-                margin-bottom: 20px;
-            }
-            .imagem-materia {
-                width: 100%;
-                height: auto;
-                margin-bottom: 30px;
-            }
-            .texto-latim {
-                line-height: 1.6;
-                color: #333;
-                text-align: justify;
-            }
-            .texto-latim p {
-                margin-bottom: 15px;
-            }
-        </style>
-    </head>
-    <body>
+            <h2>Escassez e Logística</h2>
+            <p>A transição global para o padrão DDR5 trouxe custos de fabricação mais elevados. A priorização de chips para smartphones e carros elétricos criou um gargalo que deve durar até 2028, segundo especialistas do setor.</p>
 
-        <nav class="navbar">
-            <ul class="navlinks">
-                <li><a href="analises.html">analises</a></li>
-                <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
-                <li><a href="noticias.html">noticias</a></li>
-                <li><a href="comparaçao de peças.html">comparaçao</a></li>
+            <div class="dica-editor">
+                <strong>💡 Dica do Editor:</strong> Se você não precisa de um upgrade urgente, o momento é de paciência. Para quem precisa montar uma máquina agora, a recomendação é buscar kits "open box" ou promoções sazonais.
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <h3>Technolog</h3>
+                <p>O seu portal de hardware e performance.</p>
             </ul>
-        </nav>
-                <main class="secao-materia">
-            <h1 class="titulo-materia">A "Tempestade Perfeita": Por que montar um PC em 2026 ficou tão caro?</h1>
-            
-            <img src="memoria.webp" alt="Memória RAM em alta" class="imagem-materia">
 
-            <div class="texto-materia">
-                <p>Se você tentou comprar um kit de memória RAM nas últimas semanas, provavelmente levou um susto. O mercado de hardware enfrenta em 2026 uma das maiores crises de abastecimento da década, com preços que subiram mais de 60% apenas no primeiro trimestre deste ano.</p>
-                
-                <h2>O culpado: O Boom da Inteligência Artificial</h2>
-                <p>O principal motivo não está nos computadores domésticos, mas nos grandes Data Centers. Empresas como Google, Amazon e Microsoft estão comprando estoques inteiros de chips DRAM para alimentar servidores de IA. Como as fabricantes ganham mais vendendo memórias de alta performance (HBM) para essas empresas, a produção de memórias DDR4 e DDR5 comuns para nós, consumidores, acabou ficando em segundo plano.</p>
+            <ul>
+                <h3>links</h3>
+                <li><a href="analises.html">Analises</a></li>
+                <li><a href="dicas de manutencao.html">Manutenção</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="comparaçao de peças.html">Comparação</a></li>
+            </ul>
 
-                <table class="tabela-precos">
-                    <thead>
-                        <tr>
-                            <th>Componente (16GB)</th>
-                            <th>Preço Médio 2024</th>
-                            <th>Preço Atual (2026)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>DDR4 3200MHz</td>
-                            <td>R$ 280,00</td>
-                            <td>R$ 490,00</td>
-                        </tr>
-                        <tr>
-                            <td>DDR5 6000MHz</td>
-                            <td>R$ 450,00</td>
-                            <td>R$ 890,00</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <ul>
+                <h3>contato</h3>
+                <li>📍 Palmas, TO</li>
+                <li>📞 (63) 99999-9999</li>
+                <li>✉️ help@technolog.com</li>
+            </ul>
+    </footer>
+        </div>
+    </footer>
 
-                <h2>Escassez de Matéria-Prima e Logística</h2>
-                <p>Além da demanda por IA, a transição global para o padrão DDR5 trouxe custos de fabricação mais elevados. A escassez de controladores PMIC e a priorização de chips para smartphones e carros elétricos criaram um gargalo que, segundo analistas da Micron e Samsung, só deve apresentar sinais de melhora a partir de 2027 ou 2028.</p>
-
-                <p><strong>Dica do editor:</strong> Se você não precisa de um upgrade urgente, o momento é de paciência. Para quem precisa montar uma máquina agora, a recomendação é buscar kits "open box" ou promoções pontuais, pois a tendência para os próximos meses ainda é de alta.</p>
-            </div>
-        </main>
-        <footer>
-            <div class="conteiner">
-                <ul>
-                    <h3>technolog</h3>
-                    <p>um site de tecnologia</p>
-                    <div class="redes-sociais">
-                        
-                        <img src="linkedin.webp" alt="linkedin" width="40" height="40">
-                    </div>
-                </ul>
-                <ul>
-                    <h3>links</h3>
-                    <li><a href="analises.html">analises</a></li>
-                    <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
-                    <li><a href="noticias.html">noticias</a></li>
-                    <li><a href="comparaçao de peças.html">comparaçao</a></li>
-                </ul>
-                <ul>
-                    <h3 conteiner>suporte</h3>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-                <ul conteiner>
-                    <h3 class="conteiner">nos contate</h3>
-                    <li class="conteiner">
-                        <p class="conteiner">numero:63 99999-9999</p>
-                    </li>
-                    <li>
-                        <p class="conteier">email:name.example@email.com</p>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-
-    </body>
+</body>
 </html>

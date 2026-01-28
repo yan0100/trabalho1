@@ -1,133 +1,178 @@
 <!doctype html>
-<html>
-    <head>
-        <title>hardware e tecnologia</title>
-        <link rel="stylesheet" href="aqui fica bonito.css">
-        <style>
-            /* SEU CSS ORIGINAL - SEM ALTERAÇÕES */
-            ul { list-style-type: none; margin: 0; padding: 0; }
-            * { margin: 0; padding: 0; box-sizing: border-box; }
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise RTX 5060 - Technolog</title>
+    <link rel="stylesheet" href="aqui fica bonito.css">
+    <style>
+        /* Estilos Premium para Review NVIDIA */
+        .secao-materia {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-radius: 0 0 15px 15px;
+        }
+
+        .meta-info {
+            color: #76b900; /* Verde NVIDIA */
+            font-size: 14px;
+            margin-bottom: 25px;
+            display: block;
+            border-bottom: 2px solid #76b900;
+            padding-bottom: 8px;
+            width: fit-content;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .titulo-materia {
+            font-size: 40px;
+            color: #1a1a1a;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        .imagem-materia {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        /* Ficha Técnica Estilizada */
+        .ficha-tecnica {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 6px solid #76b900;
+        }
+
+        .ficha-tecnica h4 {
+            color: #76b900;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+
+        .ficha-tecnica ul {
+            list-style: none;
+        }
+
+        .ficha-tecnica li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            color: #444;
+            font-size: 15px;
+        }
+
+        .ficha-tecnica li strong {
+            color: #2c3e50;
+        }
+
+        .texto-artigo h4 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 40px 0 20px 0;
+        }
+
+        .texto-artigo p {
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Veredito Final */
+        .box-destaque {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .box-destaque strong {
+            color: #76b900;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li><a href="analises.html">analises</a></li>
+            <li><a href="dicas de manutencao.html">manutençao</a></li>
+            <li><a href="noticias.html">noticias</a></li>
+            <li><a href="comparaçao de peças.html">comparaçao</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <h1>Análise de GPUs</h1>
+        <p>Benchmarks reais e a tecnologia por trás dos pixels.</p>
+    </header>
+
+    <main class="secao-materia">
+        <span class="meta-info">GPU REVIEW | NVIDIA BLACKWELL | 2026</span>
+        <h1 class="titulo-materia">Análise da RTX 5060: O Salto para as Memórias GDDR7</h1>
+        
+        <img src="rtx 5060.jpg" alt="Placa de vídeo NVIDIA RTX 5060" class="imagem-materia">
+
+        <div class="texto-artigo">
+            <p>A RTX 5060 chega com o desafio de suceder a popular série 40, trazendo um salto tecnológico focado em inteligência artificial e largura de banda. Utilizando a nova arquitetura Blackwell, ela não apenas aumenta os frames, mas redefine a qualidade de imagem através do novo ecossistema de geração de quadros neural da NVIDIA.</p>
             
-            footer { background-color: #2c3e50; }
-            footer .conteiner { display: flex; color:white; }
-            footer .conteiner ul { width: 25%; }
-            footer .conteiner h3 { margin-bottom: 16px; font-weight: 600; }
-            footer .conteiner redes-sociais img { margin-right: 10px; }
-            footer .conteiner ul>p { margin-bottom: 40px; }
-            footer .conteiner li { margin: 10px 0; }
-            footer .conteiner a { color: white; }
-            
-            img { background-color: transparent; border-radius: 5px; }
+            <div class="ficha-tecnica">
+                <h4>Especificações Técnicas</h4>
+                <ul>
+                    <li><strong>Arquitetura:</strong> Blackwell (GB206)</li>
+                    <li><strong>Núcleos CUDA:</strong> 3.840</li>
+                    <li><strong>VRAM:</strong> 8 GB GDDR7 (28 Gbps)</li>
+                    <li><strong>Interface:</strong> PCIe 5.0 x8</li>
+                    <li><strong>Consumo (TDP):</strong> 145W</li>
+                    <li><strong>Saída:</strong> DisplayPort 2.1b</li>
+                </ul>
+            </div>
 
-            .navbar ul {
-                list-style-type: none;
-                background-color: #003366; 
-                padding: 0px;
-                margin: 0px;
-                overflow: hidden;
-            }
-            .navbar a {
-                color: white;
-                text-decoration: none;
-                padding: 15px;
-                display: block;
-                text-align: center;
-            }
-            .navbar a:hover { background-color: rgb(0, 0%, 10%); }
-            .navbar li { float: left; }
-            a { text-decoration: none; }
+            <h4>O Impacto do GDDR7</h4>
+            <p>O grande diferencial desta geração é a memória GDDR7. Com uma velocidade de 28 Gbps, ela entrega uma largura de banda muito superior à geração anterior, eliminando gargalos em resoluções 1440p e permitindo que o processador gráfico trabalhe em sua capacidade máxima sem interrupções.</p>
 
-            /* CSS NOVO APENAS PARA A MATÉRIA (O QUE FICA NO MEIO) */
-            .secao-materia {
-                max-width: 800px;
-                margin: 50px auto;
-                padding: 0 20px;
-                font-family: Arial, sans-serif;
-            }
-            .titulo-materia {
-                font-size: 36px;
-                color: #003366;
-                margin-bottom: 20px;
-            }
-            .imagem-materia {
-                width: 100%;
-                height: auto;
-                margin-bottom: 30px;
-            }
-            .texto-latim {
-                line-height: 1.6;
-                color: #333;
-                text-align: justify;
-            }
-            .texto-latim p {
-                margin-bottom: 15px;
-            }
-        </style>
-    </head>
-    <body>
+            <div class="box-destaque">
+                <p><strong>Veredito:</strong> A RTX 5060 é a placa ideal para quem busca o máximo de tecnologia em IA e eficiência energética. <strong>Aprovada para 1080p e 1440p Ultra.</strong></p>
+            </div>
+        </div>
+    </main>
 
-        <nav class="navbar">
-            <ul class="navlinks">
-                <li><a href="analises.html">analises</a></li>
-                <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
-                <li><a href="noticias.html">noticias</a></li>
-                <li><a href="comparaçao de peças.html">comparaçao</a></li>
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <h3>Technolog</h3>
+                <p>O seu portal de hardware e performance.</p>
             </ul>
-        </nav>
 
-        <main class="secao-materia">
-            <h1 class="titulo-materia">Análise da rtx5060</h1>
-            
-            <img src="rtx 5060.jpg" alt="Imagem da matéria" class="imagem-materia">
+            <ul>
+                <h3>links</h3>
+                <li><a href="analises.html">Analises</a></li>
+                <li><a href="dicas de manutencao.html">Manutenção</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="comparaçao de peças.html">Comparação</a></li>
+            </ul>
 
-            <div class="texto-latim">
-                <p>A RTX 5060 chega com o desafio de suceder a popular série 40, trazendo um salto tecnológico focado em inteligência artificial e largura de banda. Utilizando a litografia de 5nm (4N da TSMC), ela não apenas aumenta os frames, mas redefine como a imagem é gerada através do novo ecossistema neural da NVIDIA.</p>
-                <h4>Características Técnicas de Nova Geração</h4>
-                <p>As especificações mostram que a NVIDIA priorizou a velocidade de comunicação dos dados:</p>
-                <p>Arquitetura: Blackwell (GB206).</p>
-                <p>Núcleos CUDA: 3.840 núcleos.</p>
-                <p>Memória de Vídeo (VRAM): 8 GB de GDDR7 (um grande salto em relação ao GDDR6).</p>
-                <p>Velocidade de Memória: 28 Gbps, entregando uma largura de banda muito superior à geração anterior.</p>
-                <p>Interface: PCIe 5.0 x8 (maior compatibilidade com placas-mãe modernas).</p>
-                <p>Consumo (TDP): Aproximadamente 145W.</p>
-                <p>Saídas de Vídeo: Suporte nativo a DisplayPort 2.1b, permitindo resoluções e frequências altíssimas sem compressão.</p>
-                <h4>Saídas de Vídeo: Suporte nativo a DisplayPort 2.1b, permitindo resoluções e frequências altíssimas sem compressão.</h4>
-            </div>
-        </main>
+            <ul>
+                <h3>contato</h3>
+                <li>📍 Palmas, TO</li>
+                <li>📞 (63) 99999-9999</li>
+                <li>✉️ help@technolog.com</li>
+            </ul>
+    </footer>
+        </div>
+    </footer>
 
-        <footer>
-            <div class="conteiner">
-                <ul>
-                    <h3>technolog</h3>
-                    <p>um site de tecnologia</p>
-                    <div class="redes-sociais">
-                        
-                        <img src="linkedin.webp" alt="linkedin" width="40" height="40">
-                    </div>
-                </ul>
-                <ul>
-                    <h3>links</h3>
-                    <li><a href="analises.html">analises</a></li>
-                    <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
-                    <li><a href="noticias.html">noticias</a></li>
-                    <li><a href="comparaçao de peças.html">comparaçao</a></li>
-                </ul>
-                <ul>
-                    <h3 conteiner>suporte</h3>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-                <ul conteiner>
-                    <h3 class="conteiner">nos contate</h3>
-                    <li class="conteiner">
-                        <p class="conteiner">numero:63 99999-9999</p>
-                    </li>
-                    <li>
-                        <p class="conteier">email:name.example@email.com</p>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-
-    </body>
+</body>
 </html>

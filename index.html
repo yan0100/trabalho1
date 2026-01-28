@@ -1,217 +1,179 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>hardware e tecnologia</title>
-        <meta name="description" content="site de tecnologia">
-        <meta name="autor" content="Yan Felipe Ferreira de souza">
-        <meta name="keywords" content="tecnologia, hardware, software,">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - Technolog</title>
+    <meta name="description" content="Site de tecnologia">
+    <meta name="autor" content="Yan Felipe Ferreira de Souza">
+    <meta name="keywords" content="tecnologia, hardware, software">
+    
     <link rel="stylesheet" href="aqui fica bonito.css">
     
-</head>
-    <body>
-            <style>
-        /* BASE DO SEU CODIGO */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+    <style>
+        /* Estilos específicos para a Grade de Notícias que não estão no CSS externo */
+        .container-noticias {
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+            padding: 0 20px;
         }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .navbar ul {
-            list-style-type: none;
-            background-color: #003366;
-            padding: 0px;
-            margin: 0px;
-            overflow: hidden;
-        }
-
-        .navbar li {
-            float: left;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 15px;
-            display: block;
-            text-align: center;
-        }
-
-
 
         .noticia-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-            gap: 20px;
-            padding: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px;
         }
 
         .card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            background: white;
+            border-radius: 12px;
             overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border: 1px solid #eee;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
 
         .card-imagem img {
             width: 100%;
-            height: auto;
+            height: 200px;
+            object-fit: cover;
             display: block;
         }
 
         .card-corpo {
-            padding: 15px;
+            padding: 20px;
+            flex-grow: 1;
         }
 
-        /* FOOTER ORIGINAL (Sem quebrar o flex) */
-        footer {
-    background-color: #2c3e50;
-    }
-    footer .conteiner{
-    display: flex;
-    color:white;
-    }
-    footer .conteiner ul{
-        width: 25%;
-    }
-    footer .conteiner h3{
-        margin-bottom: 16px;
-        font-weight: 600;
-    }
-    footer .conteiner redes-sociais img{
-        margin-right: 10px;
-    }
-    footer .conteiner ul>p{
-        margin-bottom: 40px;
-    }
-    footer .conteiner li{
-        margin: 10px 0;
-    }
-    footer .conteiner a{
-        color: white;
-}
-img {
-        background-color: transparent;
-        border-radius: 5px;
-}
+        .tag-noticia {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+
+        .card-corpo h3 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            line-height: 1.4;
+        }
+
+        /* Remove o sublinhado azul dos links dos cards */
+        .noticia-grid a {
+            text-decoration: none;
+            color: inherit;
+        }
     </style>
+</head>
 
-            <nav class="navbar">
-                <ul class="navlinks">
-                    <li><a href="analises.html">analises</a></li>
-                    <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
-                    <li><a href="noticias.html">noticias</a></li>
-                    <li><a href="comparaçao de peças.html">comparaçao</a></li>
-                </ul>
-        </div>
+<body>
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li><a href="analises.html">analises</a></li>
+            <li><a href="dicas de manutencao.html">manutençao</a></li>
+            <li><a href="noticias.html">noticias</a></li>
+            <li><a href="comparaçao de peças.html">comparaçao</a></li>
+        </ul>
+    </nav>
 
-
-        </nav>
+    <header class="hero-section">
+        <h1>Technolog</h1>
+        <p>As últimas notícias, análises e dicas do mundo do hardware em 2026.</p>
+    </header>
 
     <main class="container-noticias">
-    <div class="noticia-grid">
-        <a href="noticaram.html"><article class="card">
-            <div class="card-imagem">
-                <img src="memoria.webp" alt="noticia">
-            </div>
-            <div class="card-corpo">
-                <span class="tag-noticia">noticia</span>
-                <h3>A "Tempestade Perfeita": Por que montar um PC em 2026 ficou tão caro?</h3>
-            </div>
-        </article></a>
+        <div class="noticia-grid">
+            
+            <a href="noticaram.html">
+                <article class="card">
+                    <div class="card-imagem">
+                        <img src="memoria.webp" alt="Memórias">
+                    </div>
+                    <div class="card-corpo">
+                        <span class="tag-noticia">Economia</span>
+                        <h3>A "Tempestade Perfeita": Por que montar um PC em 2026 ficou tão caro?</h3>
+                    </div>
+                </article>
+            </a>
 
-        <article class="card">
-            <div class="card-imagem">
-                <img src="ddr3.webp" alt="Hardware">
-            </div>
-            <div class="card-corpo">
-                <span class="tag-noticia">Hardware</span>
-                <h3>Memórias DDR3 podem retornar em meio à crise de componentes</h3>
-            </div>
-        </article>
+            <a href="#">
+                <article class="card">
+                    <div class="card-imagem">
+                        <img src="ddr3.webp" alt="DDR3">
+                    </div>
+                    <div class="card-corpo">
+                        <span class="tag-noticia">Hardware</span>
+                        <h3>Memórias DDR3 podem retornar em meio à crise de componentes</h3>
+                    </div>
+                </article>
+            </a>
 
+            <a href="dicas de manutencao.html">
+                <article class="card">
+                    <div class="card-imagem">
+                        <img src="pclimpo.webp" alt="Limpeza de PC">
+                    </div>
+                    <div class="card-corpo">
+                        <span class="tag-noticia">Dicas</span>
+                        <h3>Limpeza Profunda: Como blindar seu hardware contra a poeira</h3>
+                    </div>
+                </article>
+            </a>
 
-        <article class="card">
-            <div class="card-imagem">
-                <img src="pclimpo.webp" alt="PLACE HOLDER">
-            </div>
-            <div class="card-corpo">
-                <span class="tag-noticia">dicas</span>
-                <h3>Limpeza Profunda: Como blindar seu hardware contra a poeira</h3>
-            </div>
-        </article>
+            <a href="analises.html">
+                <article class="card">
+                    <div class="card-imagem">
+                        <img src="ryzen 7 9700x.jpg" alt="Ryzen 7">
+                    </div>
+                    <div class="card-corpo">
+                        <span class="tag-noticia">Análises</span>
+                        <h3>Análise do Ryzen 7 9700X: O rei da eficiência energética?</h3>
+                    </div>
+                </article>
+            </a>
 
+        </div>
+    </main>
 
-        <article class="card">
-            <div class="card-imagem">
-                <img src="ryzen 7 9700x.jpg" alt="Setup">
-            </div>
-            <div class="card-corpo">
-                <span class="tag-noticia">analises</span>
-                <h3>Análise do Ryzen 7 9700X</h3>
-            </div>
-        </article>
-    </div>
-</main>
-
-        <footer>
-        <div class="conteiner">
-            <!--ul 1-->
+    <footer>
+        <div class="footer-content">
             <ul>
-                <h3>technolog</h3>
-                    <p>um site de tecnologia</p>
-                    <div class="redes-sociais">
+                <h3>Technolog</h3>
+                <p>O seu portal de hardware e performance.</p>
 
-                    
-                    <img src="linkedin.webp" alt="linkedin"width="40" height="40">
-
-                    <!--talvez adicione mais-->
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
             </ul>
-            <!--ul 1 fim-->
-            <!--ul 2-->
+            
+
             <ul>
                 <h3>links</h3>
-                <li><a href="analises.html">analises</a></li>
-                <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
-                <li><a href="noticias.html">noticias</a></li>
-                <li><a href="comparaçao de peças.html">comparaçao</a></li>
-
-
+                <li><a href="analises.html">Analises</a></li>
+                <li><a href="dicas de manutencao.html">Manutenção</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="comparaçao de peças.html">Comparação</a></li>
             </ul>
-            <!--ul 2fim-->
-            <!--ul 3-->
 
             <ul>
-                <h3 conteiner>suporte</h3>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contato</a></li>
+                <h3>contato</h3>
+                <li>📍 Palmas, TO</li>
+                <li>📞 (63) 99999-9999</li>
+                <li>✉️ help@technolog.com</li>
             </ul>
-            <!--ul 3fim-->
-            <!--ul 4-->
-            <ul conteiner>
-                <h3 class="conteiner">nos contate</h3>
-                <li class="conteiner">
-                    <p class="conteiner">numero:63 99999-9999</p>
-                </li>
-                <li>
-                    <p class="conteier">email:name.example@email.com</p>
-                </li>
-            </ul>
-            <!--ul 4fim-->
-
-            <!--- Conteúdo do rodapé
-            <p>© 2024 Hardware e Tecnologia. Todos os direitos reservados.</p>
-        --->
+    </footer>
         </div>
     </footer>
 
-    </body>
+</body>
 </html>

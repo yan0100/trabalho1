@@ -1,144 +1,175 @@
-
 <!doctype html>
-<html>
-    <head>
-        <title>hardware e tecnologia</title>
-        <link rel="stylesheet" href="aqui fica bonito.css">
-        <style>
-            /* SEU CSS ORIGINAL - SEM ALTERAÇÕES */
-            ul { list-style-type: none; margin: 0; padding: 0; }
-            * { margin: 0; padding: 0; box-sizing: border-box; }
-            
-            footer { background-color: #2c3e50; }
-            footer .conteiner { display: flex; color:white; }
-            footer .conteiner ul { width: 25%; }
-            footer .conteiner h3 { margin-bottom: 16px; font-weight: 600; }
-            footer .conteiner redes-sociais img { margin-right: 10px; }
-            footer .conteiner ul>p { margin-bottom: 40px; }
-            footer .conteiner li { margin: 10px 0; }
-            footer .conteiner a { color: white; }
-            
-            img { background-color: transparent; border-radius: 5px; }
+<html lang="pt-br">
 
-            .navbar ul {
-                list-style-type: none;
-                background-color: #003366; 
-                padding: 0px;
-                margin: 0px;
-                overflow: hidden;
-            }
-            .navbar a {
-                color: white;
-                text-decoration: none;
-                padding: 15px;
-                display: block;
-                text-align: center;
-            }
-            .navbar a:hover { background-color: rgb(0, 0%, 10%); }
-            .navbar li { float: left; }
-            a { text-decoration: none; }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas de Manutenção - Technolog</title>
+    <link rel="stylesheet" href="aqui fica bonito.css">
+    
+    <style>
+        /* CSS de suporte para garantir que a matéria brilhe dentro da sua nova estrutura */
+        .secao-materia {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 0 0 15px 15px;
+        }
 
-            /* CSS NOVO APENAS PARA A MATÉRIA (O QUE FICA NO MEIO) */
-            .secao-materia {
-                max-width: 800px;
-                margin: 50px auto;
-                padding: 0 20px;
-                font-family: Arial, sans-serif;
-            }
-            .titulo-materia {
-                font-size: 36px;
-                color: #003366;
-                margin-bottom: 20px;
-            }
-            .imagem-materia {
-                width: 100%;
-                height: auto;
-                margin-bottom: 30px;
-            }
-            .texto-latim {
-                line-height: 1.6;
-                color: #333;
-                text-align: justify;
-            }
-            .texto-latim p {
-                margin-bottom: 15px;
-            }
-        </style>
-    </head>
-    <body>
+        .meta-info {
+            color: #e74c3c; /* Cor de destaque para manutenção */
+            font-size: 14px;
+            margin-bottom: 30px;
+            display: block;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            width: fit-content;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
 
-        <nav class="navbar">
-            <ul class="navlinks">
-                <li><a href="analises.html">analises</a></li>
-                <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
-                <li><a href="noticias.html">noticias</a></li>
-                <li><a href="comparaçao de peças.html">comparaçao</a></li>
+        .titulo-materia {
+            font-size: 36px;
+            color: #2c3e50;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .imagem-materia {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .texto-artigo h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 40px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #3498db;
+        }
+
+        .texto-artigo ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            list-style: disc;
+        }
+
+        .texto-artigo li {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            background: #fdfdfd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li><a href="analises.html">analises</a></li>
+            <li><a href="dicas de manutencao.html">manutençao</a></li>
+            <li><a href="noticias.html">noticias</a></li>
+            <li><a href="comparaçao de peças.html">comparaçao</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <h1>Manutenção Pro</h1>
+        <p>Cuide do seu hardware para ele cuidar de você.</p>
+    </header>
+
+    <main class="secao-materia">
+        <span class="meta-info">DICA TÉCNICA | 2026 | POR EQUIPE TECHNOLOG</span>
+        
+        <h1 class="titulo-materia">Limpeza Profunda: Como blindar seu hardware contra a poeira</h1>
+
+        <img src="pclimpo.webp" alt="Hardware limpo e organizado" class="imagem-materia">
+
+        <div class="texto-artigo">
+            <h2>1. O Inimigo Invisível: A Eletricidade Estática</h2>
+            <p>Antes de abrir seu gabinete, você deve descarregar a energia estática do seu corpo. Em 2026, com componentes cada vez menores, uma centelha invisível pode inutilizar uma trilha de memória. <strong>Dica:</strong> Toque em uma parte metálica sem pintura do gabinete ou use uma pulseira antiestática ligada ao aterramento.</p>
+
+            <h2>2. Técnica de Limpeza por Componente</h2>
+            <ul>
+                <li><strong>Ventoinhas (Fans):</strong> Segure as pás para que não girem enquanto você sopra ar comprimido. Se elas girarem livremente com o vento, podem gerar energia e queimar a placa-mãe.</li>
+                <li><strong>Slots de Memória:</strong> Use um pincel de cerdas de seda. Nunca use borrachas escolares, pois elas soltam resíduos que oxidam os contatos a longo prazo.</li>
+                <li><strong>Placa de Vídeo:</strong> Se não tiver experiência, não abra. Limpe apenas o dissipador externo com ar comprimido.</li>
             </ul>
-        </nav>
-            <h1 class="titulo-materia">Limpeza Profunda: Como blindar seu hardware contra a poeira</h1>
-<img src="pclimpo.webp" class="imagem-materia">
 
-<div class="texto-latim">
-    <h2>1. O Inimigo Invisível: A Eletricidade Estática</h2>
-    <p>Antes de abrir seu gabinete, você deve descarregar a energia estática do seu corpo. Em 2026, com componentes cada vez menores, uma centelha invisível pode inutilizar uma trilha de memória. <strong>Dica:</strong> Toque em uma parte metálica sem pintura do gabinete ou use uma pulseira antiestática ligada ao aterramento.</p>
+            <h2>3. Dominando o Airflow (Fluxo de Ar)</h2>
+            <p>Um PC bem montado deve seguir a lógica: <strong>Ar frio entra por baixo/frente, Ar quente sai por cima/trás.</strong></p>
 
-    <h2>2. Técnica de Limpeza por Componente</h2>
-    <ul>
-        <li><strong>Ventoinhas (Fans):</strong> Segure as pás para que não girem enquanto você sopra ar comprimido. Se elas girarem livremente com o vento, podem gerar energia (efeito dínamo) e queimar a placa-mãe.</li>
-        <li><strong>Slots de Memória:</strong> Use um pincel de cerdas de seda. Nunca use borrachas escolares, pois elas soltam resíduos que oxidam os contatos a longo prazo.</li>
-        <li><strong>Placa de Vídeo:</strong> Se não tiver experiência, não abra. Limpe apenas o dissipador externo com ar comprimido.</li>
-    </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Configuração</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Pressão Positiva</strong> (Mais entrada)</td>
+                        <td>Menos poeira acumulada, mas o ar quente pode estagnar.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pressão Negativa</strong> (Mais exaustão)</td>
+                        <td>Resfriamento rápido, mas suga poeira por todas as frestas.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
 
-    <h2>3. Dominando o Airflow (Fluxo de Ar)</h2>
-    <p>Um PC bem montado deve seguir a lógica: <strong>Ar frio entra por baixo/frente, Ar quente sai por cima/trás.</strong></p>
-    <table style="width:100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #ddd;">
-        <tr style="background:#003366; color:white;">
-            <th style="padding:10px;">Configuração</th>
-            <th style="padding:10px;">Resultado</th>
-        </tr>
-        <tr>
-            <td style="padding:10px;">Pressão Positiva (Mais fans soprando pra dentro)</td>
-            <td style="padding:10px;">Menos poeira, mas o ar quente pode estagnar.</td>
-        </tr>
-        <tr>
-            <td style="padding:10px;">Pressão Negativa (Mais fans soprando pra fora)</td>
-            <td style="padding:10px;">Resfriamento rápido, mas suga poeira por todos os buracos.</td>
-        </tr>
-    </table>
-</div>
-        <footer>
-            <div class="conteiner">
-                <ul>
-                   <h3>technolog</h3>
-                    <p>um site de tecnologia</p>
-                    <div class="redes-sociais">
-                        
-                        <img src="linkedin.webp" alt="linkedin" width="40" height="40">
-                    </div>
-                </ul>
-                <ul>
-                    <h3>links</h3>
-                    <li><a href="analises.html">analises</a></li>
-                    <li><a href="dicas de manutencao.html">dicas de manutençao da sua maquina</a></li>
-                    <li><a href="noticias.html">noticias</a></li>
-                    <li><a href="comparaçao de peças.html">comparaçao</a></li>
-                </ul>
-                <ul>
-                    <h3 conteiner>suporte</h3>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-                <ul conteiner>
-                    <h3 class="conteiner">nos contate</h3>
-                    <li class="conteiner">
-                        <p class="conteiner">numero:63 99999-9999</p>
-                    </li>
-                    <li>
-                        <p class="conteier">email:name.example@email.com</p>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <h3>Technolog</h3>
+                <p>O futuro do hardware.</p>
+            </ul>
 
-    </body>
+            <ul>
+                <h3>links</h3>
+                <li><a href="analises.html">Analises</a></li>
+                <li><a href="dicas de manutencao.html">Manutenção</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="comparaçao de peças.html">Comparação</a></li>
+            </ul>
+
+            <ul>
+                <h3>contato</h3>
+                <li>📍 Palmas, TO</li>
+                <li>📞 (63) 99999-9999</li>
+                <li>✉️ help@technolog.com</li>
+            </ul>
+    </footer>
+            </ul>
+        </div>
+    </footer>
+
+</body>
 </html>
