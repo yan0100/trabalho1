@@ -1,4 +1,4 @@
-# 💻 tecnolog - site sobre tecnologias
+#  tecnolog - site sobre tecnologias
 
 Este projeto é uma aplicação web interativa que funciona como um catálogo de informações sobre o mundo da tecnologia. Foi desenvolvido como o trabalho prático da disciplina de programaçao basica para web
 
