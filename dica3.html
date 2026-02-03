@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Care - Technolog</title>
+    <link rel="stylesheet" href="aqui_fica_bonito.css">
+    <style>
+        /* Estilo Interno da Matéria - Paleta Azul e Ciano */
+        .secao-materia {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 0 0 15px 15px;
+        }
+
+        .meta-info {
+            color: #00ced1; /* Ciano para Dados */
+            font-size: 14px;
+            margin-bottom: 25px;
+            display: block;
+            border-bottom: 2px solid #00ced1;
+            padding-bottom: 8px;
+            width: fit-content;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .titulo-materia {
+            font-size: 38px;
+            color: #2c3e50;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        .imagem-materia {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .texto-artigo h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 40px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #00ced1;
+        }
+
+        .texto-artigo p, .texto-artigo li {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #444;
+            font-size: 1.1rem;
+        }
+
+        /* Tabela Comparativa Estilizada */
+        .tabela-armazenamento {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: #f8fafc;
+        }
+
+        .tabela-armazenamento th {
+            background: #2c3e50;
+            color: #00ced1;
+            padding: 15px;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .tabela-armazenamento td {
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .alerta-smart {
+            background-color: #fffaf0;
+            border: 2px solid #ed8936;
+            padding: 25px;
+            border-radius: 10px;
+            color: #744210;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li><a href="analises.html">analises</a></li>
+            <li><a href="dicasdemanutencao.html">manutenção</a></li>
+            <li><a href="noticias.html">notícias</a></li>
+            <li><a href="comparaçaodepeças.html">comparação</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <h1>Armazenamento e Backup</h1>
+        <p>Seus dados são o bem mais valioso. Saiba como protegê-los.</p>
+    </header>
+
+    <main class="secao-materia">
+        <span class="meta-info">STORAGE | 2026 | SEGURANÇA</span>
+        
+        <h1 class="titulo-materia">Data Care: Como não perder seus arquivos para sempre</h1>
+
+        <img src="img/ssd.webp" alt="Visão interna de um SSD" class="imagem-materia">
+
+        <div class="texto-artigo">
+            <h2>1. Entendendo o S.M.A.R.T.</h2>
+            <p>O S.M.A.R.T é como um "painel de diagnóstico" do seu disco. Ele prevê falhas antes que elas ocorram. Se você notar o valor de <strong>"Reallocated Sectors"</strong> aumentando, seu hardware está fisicamente comprometido.</p>
+            
+            <div class="alerta-smart">
+                <strong>⚠️ AVISO DE EMERGÊNCIA:</strong> Se o software de monitoramento indicar erro S.M.A.R.T, pare tudo! Faça o backup dos seus arquivos vitais antes de tentar qualquer reparo.
+            </div>
+
+            <h2>2. A Armadilha dos SSDs Chineses Baratos</h2>
+            <p>Muitos SSDs de baixo custo economizam no <strong>DRAM Cache</strong>. Sem esse componente, a controladora do SSD fica sobrecarregada ao gerenciar o índice de arquivos.</p>
+            <p><strong>Impacto:</strong> Drives sem cache sofrem lentidão extrema quando cheios e possuem uma vida útil reduzida em até 40% em comparação a modelos premium.</p>
+
+            <h2>3. Desfragmentar ou Otimizar?</h2>
+            <p>Em 2026, realizar o procedimento errado pode diminuir drasticamente a vida útil do seu dispositivo:</p>
+
+            <table class="tabela-armazenamento">
+                <thead>
+                    <tr>
+                        <th>Tipo de Hardware</th>
+                        <th>Ação Recomendada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>HD Mecânico (SATA)</strong></td>
+                        <td><strong>Desfragmentar:</strong> Melhora a leitura física das agulhas magnéticas.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SSD / NVMe</strong></td>
+                        <td><strong>Otimizar (TRIM):</strong> NUNCA desfragmente. O TRIM limpa blocos de memória eletricamente.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <h3>Technolog</h3>
+                <p>O seu portal de hardware e performance.</p>
+            </ul>
+
+            <ul>
+                <h3>links</h3>
+                <li><a href="analises.html">Analises</a></li>
+                <li><a href="dicasdemanutencao.html">Manutenção</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="comparaçaodepeças.html">Comparação</a></li>
+            </ul>
+
+            <ul>
+                <h3>contato</h3>
+                <li>📍 Palmas, TO</li>
+                <li>📞 (63) 99999-9999</li>
+                <li>✉️ help@technolog.com</li>
+            </ul>
+
+        </div>
+    </footer>
+<script src="dados.js"></script>
+</body>
+</html>

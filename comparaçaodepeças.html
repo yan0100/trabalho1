@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Hardware e Tecnologia</title>
+    <link rel="stylesheet" href="aqui_fica_bonito.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <ul class="navlinks">
+        <li><a href="analises.html">Análises</a></li>
+        <li><a href="dicasdemanutencao.html">Manutenção</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="comparaçaodepeças.html">Comparação</a></li>
+    </ul>
+</nav>
+<header class="hero-section">
+    <h1>Comparador de Hardware</h1>
+    <p>Analise o desempenho entre Processadores, Placas de Vídeo e Placas-mãe em tempo real.</p>
+</header>
+<main class="container">
+    <section class="seletor-tipo">
+        <label for="tipoHardware">O que deseja comparar?</label>
+        <select id="tipoHardware">
+            <option value="">-- Escolha uma categoria --</option>
+            <option value="cpu">Processadores</option>
+            <option value="gpu">Placas de Vídeo</option>
+            <option value="mobo">Placas-mãe</option>
+        </select>
+    </section>
+
+    <div id="loading" class="hidden" style="display:none;">Buscando dados...</div>
+
+    <section id="gridSelecao" class="comparador-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+        <div class="coluna">
+            <h3>Peça A</h3>
+            <input type="text" id="inputA" placeholder="Ex: RTX 3060">
+            <div id="listaA" class="lista-sugestoes"></div>
+        </div>
+
+        <div class="coluna">
+            <h3>Peça B</h3>
+            <input type="text" id="inputB" placeholder="Ex: RTX 4060">
+            <div id="listaB" class="lista-sugestoes"></div>
+        </div>
+    </section>
+
+    <div style="text-align: center;">
+        <button id="btnComparar" class="btn-executar">
+            COMPARAR AGORA
+        </button>
+    </div>
+
+    <section id="resultadoArea" class="hidden" style="display:none;">
+        <div id="tabelaResultado"></div>
+    </section>
+
+    <section class="historico">
+        <h3>Última Busca</h3>
+        <p id="historicoConteudo">Nenhuma comparação salva.</p>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <ul>
+            <h3>Technolog</h3>
+            <p>O seu portal definitivo sobre hardware e performance.</p>
+        </ul>
+        
+
+            <ul>
+                <h3>links</h3>
+                <li><a href="analises.html">Analises</a></li>
+                <li><a href="dicasdemanutencao.html">Manutenção</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="comparaçaodepeças.html">Comparação</a></li>
+            </ul>
+
+            <ul>
+                <h3>contato</h3>
+                <li>📍 Palmas, TO</li>
+                <li>📞 (63) 99999-9999</li>
+                <li>✉️ help@technolog.com</li>
+            </ul>
+
+    </div>
+</footer>
+
+<script src="dados.js"></script>
+</body>
+</html>

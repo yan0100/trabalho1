@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blindagem Elétrica - Technolog</title>
+    <link rel="stylesheet" href="aqui_fica_bonito.css">
+    <style>
+        /* CSS Otimizado para a Matéria */
+        .secao-materia {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 0 0 15px 15px;
+        }
+
+        .meta-info {
+            color: #e74c3c; /* Vermelho para Alerta/Dica */
+            font-size: 14px;
+            margin-bottom: 25px;
+            display: block;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 8px;
+            width: fit-content;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .titulo-materia {
+            font-size: 38px;
+            color: #2c3e50;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        .imagem-materia {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .texto-artigo h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 40px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #e74c3c;
+        }
+
+        .texto-artigo p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #444;
+            font-size: 1.1rem;
+        }
+
+        /* Estilização da lista de dicas */
+        .box-dicas {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px dashed #cbd5e0;
+            margin-top: 20px;
+        }
+
+        .box-dicas strong { color: #2c3e50; }
+        
+        .destaque-negativo {
+            color: #c0392b;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li><a href="analises.html">analises</a></li>
+            <li><a href="dicasdemanutencao.html">manutenção</a></li>
+            <li><a href="noticias.html">notícias</a></li>
+            <li><a href="comparaçaodepeças.html">comparação</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <h1>Proteção de Hardware</h1>
+        <p>Segurança elétrica e organização para máxima longevidade.</p>
+    </header>
+
+    <main class="secao-materia">
+        <span class="meta-info">GUIA TÉCNICO | 2026 | HARDWARE</span>
+        
+        <h1 class="titulo-materia">Blindagem Elétrica: Protegendo seu PC de Raios e Curtos</h1>
+
+        <img src="img/clamper.webp" alt="Proteção Elétrica" class="imagem-materia">
+
+        <div class="texto-artigo">
+            <h2>1. O Mito do Estabilizador</h2>
+            <p>O estabilizador é o maior inimigo das fontes modernas com PFC Ativo. Ele é lento demais para os picos de energia e sua mecânica de "relés" estressa os capacitores, diminuindo a vida útil do seu PC. <span class="destaque-negativo">Jogue-o fora!</span> A recomendação profissional é o uso de um <strong>DPS (Dispositivo de Proteção contra Surtos)</strong> de alta qualidade.</p>
+
+            <h2>2. Aterramento: A Segurança Esquecida</h2>
+            <p>Sem um aterramento adequado, a carcaça metálica do seu gabinete acumula carga, o que pode causar desde choques desagradáveis até interferências ruidosas no áudio e instabilidade em periféricos USB. Se o aterramento predial não for possível, considere um módulo isolador para mitigar riscos.</p>
+
+            <h2>3. Dominando o Cable Management</h2>
+            <p>A organização de cabos vai além da estética; ela garante que o fluxo de ar passe livremente pelos componentes críticos, evitando bolsões de calor que causam o <em>Thermal Throttling</em>.</p>
+            
+            <div class="box-dicas">
+                <p><strong>Dicas de Especialista:</strong></p>
+                <p>✅ <strong>Velcro é seu amigo:</strong> Evite abraçadeiras de plástico fixas (enforca-gato) que podem cortar os fios; use velcro reutilizável.</p>
+                <p>✅ <strong>Traseira do Gabinete:</strong> Utilize o espaço atrás da placa-mãe para esconder o excesso de fios da fonte.</p>
+                <p>✅ <strong>Segurança Física:</strong> Garanta que nenhum cabo, por menor que seja, encoste nas pás das ventoinhas (fans).</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <h3>Technolog</h3>
+                <p>O seu portal de hardware e performance.</p>
+            </ul>
+
+            <ul>
+                <h3>links</h3>
+                <li><a href="analises.html">Analises</a></li>
+                <li><a href="dicasdemanutencao.html">Manutenção</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="comparaçaodepeças.html">Comparação</a></li>
+            </ul>
+
+            <ul>
+                <h3>contato</h3>
+                <li>📍 Palmas, TO</li>
+                <li>📞 (63) 99999-9999</li>
+                <li>✉️ help@technolog.com</li>
+            </ul>
+
+        </div>
+    </footer>
+<script src="dados.js"></script>
+</body>
+</html>

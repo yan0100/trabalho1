@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - Technolog</title>
+    <meta name="description" content="Site de tecnologia">
+    <meta name="autor" content="Yan Felipe Ferreira de Souza">
+    <meta name="keywords" content="tecnologia, hardware, software">
+    
+    <link rel="stylesheet" href="aqui_fica_bonito.css">
+    
+    <style>
+        /* Estilos específicos para a Grade de Notícias que não estão no CSS externo */
+        .container-noticias {
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+            padding: 0 20px;
+        }
+
+        .noticia-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border: 1px solid #eee;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .card-imagem img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-corpo {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .tag-noticia {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+
+        .card-corpo h3 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            line-height: 1.4;
+        }
+
+        /* Remove o sublinhado azul dos links dos cards */
+        .noticia-grid a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li><a href="analises.html">analises</a></li>
+            <li><a href="dicasdemanutencao.html">manutenção</a></li>
+            <li><a href="noticias.html">notícias</a></li>
+            <li><a href="comparaçaodepeças.html">comparação</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <h1>Technolog</h1>
+        <p>As últimas notícias, análises e dicas do mundo do hardware em 2026.</p>
+    </header>
+
+    <main class="container-noticias">
+        <div class="noticia-grid">
+            
+            <a href="noticaram.html">
+                <article class="card">
+                    <div class="card-imagem">
+                        <img src="img/memoria.webp" alt="Memórias">
+                    </div>
+                    <div class="card-corpo">
+                        <span class="tag-noticia">Economia</span>
+                        <h3>A "Tempestade Perfeita": Por que montar um PC em 2026 ficou tão caro?</h3>
+                    </div>
+                </article>
+            </a>
+
+            <a href="noticiaddr3.html">
+                <article class="card">
+                    <div class="card-imagem">
+                        <img src="img/ddr3.webp" alt="DDR3">
+                    </div>
+                    <div class="card-corpo">
+                        <span class="tag-noticia">Hardware</span>
+                        <h3>Memórias DDR3 podem retornar em meio à crise de componentes</h3>
+                    </div>
+                </article>
+            </a>
+
+            <a href="dicas1.html">
+                <article class="card">
+                    <div class="card-imagem">
+                        <img src="img/pclimpo.webp" alt="Limpeza de PC">
+                    </div>
+                    <div class="card-corpo">
+                        <span class="tag-noticia">Dicas</span>
+                        <h3>Limpeza Profunda: Como blindar seu hardware contra a poeira</h3>
+                    </div>
+                </article>
+            </a>
+
+            <a href="analise-ryzen9700x.html">
+                <article class="card">
+                    <div class="card-imagem">
+                        <img src="img/ryzen7-9700x.jpg" alt="Ryzen 7">
+                    </div>
+                    <div class="card-corpo">
+                        <span class="tag-noticia">Análises</span>
+                        <h3>Análise do Ryzen 7 9700X: O rei da eficiência energética?</h3>
+                    </div>
+                </article>
+            </a>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <h3>Technolog</h3>
+                <p>O seu portal de hardware e performance.</p>
+
+            </ul>
+            
+
+            <ul>
+                <h3>links</h3>
+                <li><a href="analises.html">Analises</a></li>
+                <li><a href="dicasdemanutencao.html">Manutenção</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="comparaçaodepeças.html">Comparação</a></li>
+            </ul>
+
+            <ul>
+                <h3>contato</h3>
+                <li>📍 Palmas, TO</li>
+                <li>📞 (63) 99999-9999</li>
+                <li>✉️ help@technolog.com</li>
+            </ul>
+
+        </div>
+    </footer>
+<script src="dados.js"></script>
+</body>
+</html>
