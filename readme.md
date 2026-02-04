@@ -26,6 +26,16 @@ Conforme exigido nos requisitos técnicos, o projeto contempla:
 - **Tratamento de Erros:** Implementei um bloco `try/catch` na função de fetch para que, caso a API falhe, o utilizador veja uma mensagem de erro amigável em vez de uma tela vazia.
 - **UX (User Experience):** Adicionei um indicador visual de "Carregando..." enquanto os dados da API são processados.
 
+## Qualidade e Testes
+Para garantir a estabilidade da aplicação e a integridade dos dados de hardware, implementei uma rotina de testes automatizados via console (Unit Testing). Os testes verificam:
+
+1. **Integridade do Banco:** Garante que o arquivo JSON foi carregado com sucesso.
+2. **Validação de Schema:** Verifica se itens obrigatórios (como núcleos e preço) existem nas CPUs.
+3. **Lógica de Busca:** Simula uma pesquisa por "RTX" para validar o motor de filtro.
+4. **Tipagem de Dados:** Confirma se os preços são numéricos para evitar erros em cálculos futuros.
+
+*Os resultados podem ser conferidos no Console do Desenvolvedor (F12) ao carregar a página.*
+
 ##  Como Executar
 1. Clone este repositório: `git clone https://github.com/yan0100/trabalho1.git`
 2. Abra o arquivo `index.html` no seu navegador de preferência.
